@@ -11,7 +11,7 @@ defmodule Naglfar.Mixfile do
   end
 
   def application do
-    [extra_applications: [:logger, :sasl],
+    [extra_applications: [:logger],
      mod: {Naglfar.Application, []}]
   end
 
@@ -21,6 +21,10 @@ defmodule Naglfar.Mixfile do
       {:postgrex, "~> 0.13"},
       {:absinthe, "~> 1.3"},
       {:absinthe_ecto, "~> 0.1"},
+      {:plug, "~> 1.3"},
+      {:absinthe_plug, "~> 1.3"},
+      {:cowboy, "~> 1.1"},
+      {:poison, "~> 3.1"},
     ]
   end
 end

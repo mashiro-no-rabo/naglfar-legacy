@@ -6,3 +6,5 @@ config :naglfar, Naglfar.Repo,
   username: "naglfar",
   password: "naglfar",
   hostname: "localhost"
+
+config :naglfar, ecto_repos: [Naglfar.Repo]
